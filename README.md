@@ -1,4 +1,4 @@
-# DITA Bootstrap Lunr Search
+# DITA Bootstrap SASS
 
 <a href="https://www.dita-ot.org"><img src="https://www.dita-ot.org/images/dita-ot-logo.svg" align="right" height="55"></a>
 
@@ -18,7 +18,7 @@ _DITA Bootstrap SASS_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/p
 
 ## Installation
 
-The _DITA Bootstrap Lunr Search_ plug-in has been tested with [DITA-OT 4.x](http://www.dita-ot.org/download). Use the latest version for best results.
+The _DITA Bootstrap SASS_ plug-in has been tested with [DITA-OT 4.x](http://www.dita-ot.org/download). Use the latest version for best results.
 
 ### Installing DITA-OT
 
