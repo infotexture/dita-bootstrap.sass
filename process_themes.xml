@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--ant-->
+<!--
+  This file is part of the DITA Bootstrap Custom CSS plug-in for DITA Open Toolkit.
+  See the accompanying LICENSE file for applicable licenses.
+-->
+<project
+  name="dita.plugin.net.infotexture.dita-bootstrap.sass"
+  xmlns:if="ant:if"
+  xmlns:unless="ant:unless"
+>
+  <target name="bootstrap.sass" if="bootstrap.sass">
+    <property name="bootstrap.theme" value="none"/>
+    <property name="args.copycss" value="yes"/>
+    <property name="args.csspath"  value="css"/>
+    <property name="args.css" value="theme.css"/>
+    <property name="args.cssroot" value="${dita.plugin.net.infotexture.dita-bootstrap.sass.dir}/sass"/>
+  </target>
+
+</project>
