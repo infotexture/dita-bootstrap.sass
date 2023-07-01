@@ -45,7 +45,7 @@ dita install https://github.com/infotexture/dita-bootstrap.sass/archive/master.z
 
 <a href="https://nodejs.org/"><img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" align="right" width="70" height="70" align="right" width="55" height="55"></a>
 
-The _DITA Bootstrap Lunr Search_ plug-in uses the [Node.js](https://nodejs.org/) JavaScript runtime to generate the Lunr.js search index. Node.js must therefore be present for the index to be generated successfully.
+The _DITA Bootstrap SASS_ plug-in uses the [Node.js](https://nodejs.org/) JavaScript runtime to generate the `theme.css` file. Node.js must therefore be present for the index to be generated successfully.
 
 To download and install a copy, follow the instructions for your operating system on the [download page](https://nodejs.org/en/download/).
 
