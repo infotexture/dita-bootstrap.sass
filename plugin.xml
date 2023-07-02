@@ -7,8 +7,8 @@
 <plugin id="net.infotexture.dita-bootstrap.sass" version="1.0.0">
   <require plugin="net.infotexture.dita-bootstrap" />
   <feature extension="ant.import" file="process_themes.xml" />
-  <feature extension="bootstrap.theme.pre" value="bootstrap.sass" />
-  <feature extension="dita.xsl.messages" file="resource/messages.xml"/>
+  <feature extension="bootstrap.process.pre" value="bootstrap.sass" />
+  <feature extension="dita.xsl.messages" file="resource/messages.xml" />
   <transtype
     name="html5-bootstrap"
     extends="html5"
@@ -17,7 +17,8 @@
     <param
       name="bootstrap.sass"
       desc="Specifies whether to incorporate pregenerated Bootstrap sass"
-      type="enum">
+      type="enum"
+    >
     	<val>yes</val>
     	<val default="true">no</val>
     </param>
@@ -27,9 +28,7 @@
 	<transtype
     name="sass-bootstrap"
     extends="base"
-    desc="Generate a Bootstrap style from sass">
+    desc="Generate a Bootstrap style from sass"
+  >
   </transtype>
 </plugin>
-
-
-
