@@ -2,13 +2,13 @@
 
 <a href="https://www.dita-ot.org"><img src="https://www.dita-ot.org/images/dita-ot-logo.svg" align="right" height="55"></a>
 
-_DITA Bootstrap Sass_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that extends the [DITA Bootstrap](https://infotexture.github.io/dita-bootstrap/) HTML output to include customized Sass output.
+_DITA Bootstrap Sass_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that allows you to extend the [DITA Bootstrap](https://infotexture.github.io/dita-bootstrap/) HTML output via [Syntactically Awesome Style Sheets][Sass].
 
 <!-- MarkdownTOC levels="2,3" -->
 
 - [Installation](#installation)
   - [Installing DITA-OT](#installing-dita-ot)
-  - [Installing the Plug-in](#installing-the-plug-in)
+  - [Installing the plug-in](#installing-the-plug-in)
   - [Installing Node.js](#installing-nodejs)
 - [Usage](#usage)
 - [License](#license)
@@ -30,7 +30,7 @@ The _DITA Bootstrap Sass_ plug-in has been tested with [DITA-OT 4.x](http://www.
 
 See the [DITA-OT documentation](https://www.dita-ot.org/4.0/topics/installing-client.html) for detailed installation instructions.
 
-### Installing the Plug-in
+### Installing the plug-in
 
 - Run the plug-in installation commands:
 
@@ -60,7 +60,6 @@ PATH_TO_DITA_OT/bin/dita -f sass-bootstrap -i PATH_TO_DITAMAP
 
 A `theme.css` file will be generated, and the result can be seen by viewing the [index.html](./index.html) file in a web browser.
 
-
 #### Using a pregenerated Sass theme as CSS in the HTML Bootstrap output
 
 To run, use the `html5-bootstrap` transformation and add the `bootstrap.sass` parameter.
@@ -70,8 +69,7 @@ PATH_TO_DITA_OT/bin/dita -f html5-bootstrap -o out -i PATH_TO_DITAMAP \
   --bootstrap.sass=yes
 ```
 
-
 ## License
 
-[Apache 2.0](LICENSE) © 2023 Jason Fox
-
+[Apache 2.0](LICENSE) © 2023 · infotexture · Jason Fox
+[Sass]: https://sass-lang.com

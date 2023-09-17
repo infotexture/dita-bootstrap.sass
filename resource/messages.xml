@@ -15,6 +15,6 @@
   </message>
   <message id="SASS003F" type="FAILURE">
     <reason>theme.css not found. Bootstrap Sass has not been pregenerated.</reason>
-    <response>Please run the sass-bootstrap transform</response>
+    <response>Please run the sass-bootstrap transformation</response>
   </message>
 </messages>
