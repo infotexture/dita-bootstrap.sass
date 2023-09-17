@@ -105,7 +105,7 @@
     </exec>
 
     <dita-ot-echo id="SASS002W">
-      <param name="1" value="theme.css has been generated successfully."/>
+      <param name="1" value="The 'theme.css' file has been generated successfully."/>
     </dita-ot-echo>
   </target>
 </project>
