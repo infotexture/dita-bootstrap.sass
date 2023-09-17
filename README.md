@@ -1,8 +1,8 @@
-# DITA Bootstrap SASS
+# DITA Bootstrap Sass
 
 <a href="https://www.dita-ot.org"><img src="https://www.dita-ot.org/images/dita-ot-logo.svg" align="right" height="55"></a>
 
-_DITA Bootstrap SASS_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that extends the [DITA Bootstrap](https://infotexture.github.io/dita-bootstrap/) HTML output to include customized SASS Output
+_DITA Bootstrap Sass_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that extends the [DITA Bootstrap](https://infotexture.github.io/dita-bootstrap/) HTML output to include customized Sass output.
 
 <!-- MarkdownTOC levels="2,3" -->
 
@@ -11,14 +11,13 @@ _DITA Bootstrap SASS_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/p
   - [Installing the Plug-in](#installing-the-plug-in)
   - [Installing Node.js](#installing-nodejs)
 - [Usage](#usage)
-  - [Parameter Reference](#parameter-reference)
 - [License](#license)
 
 <!-- /MarkdownTOC -->
 
 ## Installation
 
-The _DITA Bootstrap SASS_ plug-in has been tested with [DITA-OT 4.x](http://www.dita-ot.org/download). Use the latest version for best results.
+The _DITA Bootstrap Sass_ plug-in has been tested with [DITA-OT 4.x](http://www.dita-ot.org/download). Use the latest version for best results.
 
 ### Installing DITA-OT
 
@@ -45,13 +44,13 @@ dita install https://github.com/infotexture/dita-bootstrap.sass/archive/master.z
 
 <a href="https://nodejs.org/"><img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" align="right" width="70" height="70" align="right" width="55" height="55"></a>
 
-The _DITA Bootstrap SASS_ plug-in uses the [Node.js](https://nodejs.org/) JavaScript runtime to generate the `theme.css` file. Node.js must therefore be present for the index to be generated successfully.
+The _DITA Bootstrap Sass_ plug-in uses the [Node.js](https://nodejs.org/) JavaScript runtime to generate the `theme.css` file. Node.js must therefore be present for the index to be generated successfully.
 
 To download and install a copy, follow the instructions for your operating system on the [download page](https://nodejs.org/en/download/).
 
 ## Usage
 
-#### Generating SASS
+#### Generating Sass
 
 To run, follow the instructions in the [override.css](./override.css) file and use the `sass-bootstrap` transformation:
 
@@ -62,7 +61,7 @@ PATH_TO_DITA_OT/bin/dita -f sass-bootstrap -i PATH_TO_DITAMAP
 A `theme.css` file will be generated, and the result can be seen by viewing the [index.html](./index.html) file in a web browser.
 
 
-#### Using a pregenerated SASS theme as CSS in the HTML Bootstrap output
+#### Using a pregenerated Sass theme as CSS in the HTML Bootstrap output
 
 To run, use the `html5-bootstrap` transformation and add the `bootstrap.sass` parameter.
 

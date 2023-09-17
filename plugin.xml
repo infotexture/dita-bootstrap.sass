@@ -28,7 +28,7 @@
 	<transtype
     name="sass-bootstrap"
     extends="base"
-    desc="Generate a Bootstrap style from sass"
+    desc="Generate a Bootstrap style from Sass"
   >
   </transtype>
 </plugin>

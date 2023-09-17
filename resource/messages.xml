@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  This file is part of the DITA Bootstrap SASS plug-in for DITA Open Toolkit.
+  This file is part of the DITA Bootstrap Sass plug-in for DITA Open Toolkit.
   See the accompanying LICENSE file for applicable licenses.
 -->
 <messages xmlns:dita="http://dita-ot.sourceforge.net">
@@ -14,7 +14,7 @@
     >Open the index.html file in the browser to view the result</response>
   </message>
   <message id="SASS003F" type="FAILURE">
-    <reason>theme.css not found. Bootstrap SASS has not been pregenerated.</reason>
+    <reason>theme.css not found. Bootstrap Sass has not been pregenerated.</reason>
     <response>Please run the sass-bootstrap transform</response>
   </message>
 </messages>
