@@ -1,0 +1,4 @@
+# This file specifies files that Prettier should not format
+
+sass/theme.css
+sass/theme.css.map
