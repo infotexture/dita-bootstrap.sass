@@ -6,14 +6,13 @@
 -->
 <project name="dita.plugin.net.infotexture.dita-bootstrap.sass" xmlns:if="ant:if" xmlns:unless="ant:unless">
   <target name="bootstrap.sass" if="bootstrap.sass">
-
     <macrodef name="incorporate-theme">
       <sequential>
         <condition property="bootstrap.theme.exists">
           <available file="${dita.plugin.net.infotexture.dita-bootstrap.sass.dir}/sass/theme.css"/>
         </condition>
-    
-        <dita-ot-fail unless:set="bootstrap.theme.exists" id="SASS003F"/> 
+
+        <dita-ot-fail unless:set="bootstrap.theme.exists" id="SASS003F"/>
         <property name="bootstrap.theme" value="none"/>
         <property name="args.copycss" value="yes"/>
         <property name="args.csspath" value="css"/>
@@ -29,8 +28,7 @@
     <incorporate-theme unless:set="bootstrap.sass.no"/>
   </target>
 
-
-    <target name="sass.node.check">
+  <target name="sass.node.check">
     <!-- For Unix run node as an executable -->
 
     <exec
@@ -91,7 +89,6 @@
       <arg value="npm install"/>
     </exec>
 
-
     <exec executable="npm" dir="${dita-bootstrap.sass.dir}" osfamily="unix" taskname="sass-generate">
       <arg line="run sass"/>
     </exec>
@@ -108,8 +105,7 @@
     </exec>
 
     <dita-ot-echo id="SASS002W">
-        <param name="1" value="theme.css has been generated successfully."/>
-      </dita-ot-echo>
+      <param name="1" value="theme.css has been generated successfully."/>
+    </dita-ot-echo>
   </target>
-
 </project>

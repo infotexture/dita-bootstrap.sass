@@ -11,12 +11,10 @@
   <feature extension="dita.xsl.messages" file="resource/messages.xml"/>
   <transtype name="html5-bootstrap" extends="html5" desc="HTML5 with Bootstrap style">
     <param name="bootstrap.sass" desc="Specifies whether to incorporate pregenerated Bootstrap sass" type="enum">
-    	<val>yes</val>
-    	<val default="true">no</val>
+      <val>yes</val>
+      <val default="true">no</val>
     </param>
-	</transtype>
-	
-
-	<transtype name="sass-bootstrap" extends="base" desc="Generate a Bootstrap style from Sass">
   </transtype>
+
+  <transtype name="sass-bootstrap" extends="base" desc="Generate a Bootstrap style from Sass"/>
 </plugin>
