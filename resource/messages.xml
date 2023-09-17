@@ -10,8 +10,7 @@
   </message>
   <message id="SASS002W" type="WARN">
     <reason>%1</reason>
-    <response
-    >Open the index.html file in the browser to view the result</response>
+    <response>Open the index.html file in the browser to view the result</response>
   </message>
   <message id="SASS003F" type="FAILURE">
     <reason>theme.css not found. Bootstrap Sass has not been pregenerated.</reason>

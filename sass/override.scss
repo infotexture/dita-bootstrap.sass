@@ -1,7 +1,6 @@
 // Copyright © 2023 · infotexture · Jason Fox
 // See the accompanying LICENSE file for applicable license
 
-
 //
 // 1) To alter the grey values of color scheme of the generated CSS,
 // uncomment the lines below
@@ -19,7 +18,6 @@
 // $gray-900: #212529;
 // $black:    #000;
 
-
 //
 // 2) To alter the base color values of color scheme of the generated CSS,
 // uncomment the lines below
@@ -36,7 +34,6 @@
 // $teal:    #20c997;
 // $cyan:    #0dcaf0;
 
-
 //
 // 3) To alter the theme color values of color scheme of the generated CSS,
 // uncomment the lines below
@@ -51,16 +48,15 @@
 // $light:         $gray-100;
 // $dark:          $gray-900;
 
-
 //
 // 4) To base the generated CSS on a Bootswatch theme, uncomment the two
 // @import lines below and replace <theme> with one of the following:
 //
-// 		cerulean, cosmo, cyborg, darkly, flatly, journal, litera, lumen,
-// 		lux, materia, minty, morph, pulse, quartz, sandstone, simplex,
-// 		sketchy, slate, solar, spacelab, superhero, united, vapor, yeti, zephyr
+// cerulean, cosmo, cyborg, darkly, flatly, journal, litera, lumen,
+// lux, materia, minty, morph, pulse, quartz, sandstone, simplex,
+// sketchy, slate, solar, spacelab, superhero, united, vapor, yeti, zephyr
 //
 
-//@import "./node_modules/bootswatch/dist/<theme>/_variables";
-@import "./node_modules/bootstrap/scss/bootstrap";
-//@import "./node_modules/bootswatch/dist/<theme>/_bootswatch";
+//@import './node_modules/bootswatch/dist/<theme>/_variables';
+@import './node_modules/bootstrap/scss/bootstrap';
+//@import './node_modules/bootswatch/dist/<theme>/_bootswatch';
