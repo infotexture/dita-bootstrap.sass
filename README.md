@@ -72,4 +72,5 @@ PATH_TO_DITA_OT/bin/dita -f html5-bootstrap -o out -i PATH_TO_DITAMAP \
 ## License
 
 [Apache 2.0](LICENSE) © 2023 · infotexture · Jason Fox
+
 [Sass]: https://sass-lang.com
