@@ -52,7 +52,7 @@ To download and install a copy, follow the instructions for your operating syste
 
 #### Generating Sass
 
-To run, follow the instructions in the [override.css](./override.css) file and use the `sass-bootstrap` transformation:
+To run, follow the instructions in the [override.scss](./override.scss) file and use the `sass-bootstrap` transformation:
 
 ```console
 PATH_TO_DITA_OT/bin/dita -f sass-bootstrap -i PATH_TO_DITAMAP
