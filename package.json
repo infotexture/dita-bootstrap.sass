@@ -1,0 +1,48 @@
+{
+  "name": "dita-bootstrap.sass",
+  "description": "DITA Open Toolkit plug-in that extends HTML output from the DITA Bootstrap plug-in with a Sass theme",
+  "homepage": "https://infotexture.github.io/dita-bootstrap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/infotexture/dita-bootstrap.sass.git"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "check": "npm run prettier-check && npm run stylelint",
+    "fix:style": "stylelint \"sass/*.scss\" --fix",
+    "fmt": "npm run format",
+    "format": "npm run prettier",
+    "format:style": "prettier --write \"**/*.scss\"",
+    "format:xml": "prettier --write \"**/*.xml\"",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install",
+    "prettier": "prettier --write \"**/*.{html,json,md,scss,xml,yml}\"",
+    "prettier-check": "prettier --check \"**/*.{html,json,md,scss,xml,yml}\"",
+    "stylelint": "stylelint \"sass/*.scss\"",
+    "test": "prettier --list-different \"**/*.{html,json,md,scss,xml,yml}\""
+  },
+  "lint-staged": {
+    "*.{html,json,md,scss,xml,yml}": [
+      "prettier --write"
+    ],
+    "*.scss": [
+      "stylelint"
+    ]
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-twbs-bootstrap"
+    ],
+    "rules": {
+      "stylistic/string-quotes": "single"
+    }
+  },
+  "devDependencies": {
+    "@prettier/plugin-xml": "3.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "14.0.1",
+    "prettier": "3.0.3",
+    "stylelint": "^15.10.3",
+    "stylelint-config-twbs-bootstrap": "^11.0.1"
+  }
+}

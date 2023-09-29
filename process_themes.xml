@@ -1,20 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--ant-->
 <!--
-  This file is part of the DITA Bootstrap Custom CSS plug-in for DITA Open Toolkit.
+  This file is part of the DITA Bootstrap Sass plug-in for DITA Open Toolkit.
   See the accompanying LICENSE file for applicable licenses.
 -->
-<project
-  name="dita.plugin.net.infotexture.dita-bootstrap.sass"
-  xmlns:if="ant:if"
-  xmlns:unless="ant:unless"
->
+<project name="dita.plugin.net.infotexture.dita-bootstrap.sass" xmlns:if="ant:if" xmlns:unless="ant:unless">
   <target name="bootstrap.sass" if="bootstrap.sass">
-    <property name="bootstrap.theme" value="none"/>
-    <property name="args.copycss" value="yes"/>
-    <property name="args.csspath"  value="css"/>
-    <property name="args.css" value="theme.css"/>
-    <property name="args.cssroot" value="${dita.plugin.net.infotexture.dita-bootstrap.sass.dir}/sass"/>
+    <macrodef name="incorporate-theme">
+      <sequential>
+        <condition property="bootstrap.theme.exists">
+          <available file="${dita.plugin.net.infotexture.dita-bootstrap.sass.dir}/sass/theme.css"/>
+        </condition>
+
+        <dita-ot-fail unless:set="bootstrap.theme.exists" id="SASS003F"/>
+        <property name="bootstrap.theme" value="none"/>
+        <property name="args.copycss" value="yes"/>
+        <property name="args.csspath" value="css"/>
+        <property name="args.css" value="theme.css"/>
+        <property name="args.cssroot" value="${dita.plugin.net.infotexture.dita-bootstrap.sass.dir}/sass"/>
+      </sequential>
+    </macrodef>
+
+    <condition property="bootstrap.sass.no">
+      <equals arg1="${bootstrap.sass}" arg2="no"/>
+    </condition>
+
+    <incorporate-theme unless:set="bootstrap.sass.no"/>
   </target>
 
+  <target name="sass.node.check">
+    <!-- For Unix run node as an executable -->
+
+    <exec
+      executable="node"
+      dir="${dita.dir}"
+      osfamily="unix"
+      taskname="node"
+      resultproperty="node.result"
+      outputproperty="node.out"
+      failonerror="false"
+      failifexecutionfails="false"
+    >
+      <arg line="-v"/>
+    </exec>
+    <!-- For Windows run from a DOS command -->
+    <exec
+      executable="cmd"
+      dir="${dita.dir}"
+      osfamily="windows"
+      taskname="node"
+      resultproperty="node.result"
+      outputproperty="node.out"
+      failonerror="false"
+      failifexecutionfails="false"
+    >
+      <arg value="/C"/>
+      <arg value="node -v"/>
+    </exec>
+
+    <condition property="node.installed">
+      <equals arg1="${node.result}" arg2="0"/>
+    </condition>
+
+    <dita-ot-fail unless:set="node.installed" id="SASS001F"/>
+  </target>
+
+  <target name="dita2sass-bootstrap" depends="sass.node.check">
+    <property name="dita-bootstrap.sass.dir" value="${dita.plugin.net.infotexture.dita-bootstrap.sass.dir}/sass"/>
+    <available file="${dita-bootstrap.sass.dir}/package-lock.json" property="sass.installed"/>
+
+    <exec
+      unless:set="sass.installed"
+      executable="npm"
+      dir="${dita-bootstrap.sass.dir}"
+      osfamily="unix"
+      taskname="sass-install"
+    >
+      <arg line="install"/>
+    </exec>
+    <exec
+      unless:set="sass.installed"
+      executable="cmd"
+      dir="${dita-bootstrap.sass.dir}"
+      osfamily="windows"
+      taskname="sass-install"
+    >
+      <arg value="/C"/>
+      <arg value="npm install"/>
+    </exec>
+
+    <exec executable="npm" dir="${dita-bootstrap.sass.dir}" osfamily="unix" taskname="sass-generate">
+      <arg line="run sass"/>
+    </exec>
+    <!-- For Windows run from a DOS command -->
+    <exec
+      unless:set="sass.installed"
+      executable="cmd"
+      dir="${dita-bootstrap.sass.dir}"
+      osfamily="windows"
+      taskname="ass-generate"
+    >
+      <arg value="/C"/>
+      <arg value="npm run sass"/>
+    </exec>
+
+    <dita-ot-echo id="SASS002W">
+      <param name="1" value="The 'theme.css' file has been generated successfully."/>
+    </dita-ot-echo>
+  </target>
 </project>

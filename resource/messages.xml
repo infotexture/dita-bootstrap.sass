@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  This file is part of the DITA Bootstrap Sass plug-in for DITA Open Toolkit.
+  See the accompanying LICENSE file for applicable licenses.
+-->
+<messages xmlns:dita="http://dita-ot.sourceforge.net">
+  <message id="SASS001F" type="FAILURE">
+    <reason>The Node runtime is not available.</reason>
+    <response>Please install Node.js to use this plug-in.</response>
+  </message>
+  <message id="SASS002W" type="WARN">
+    <reason>%1</reason>
+    <response>Open the 'index.html' file in the browser to view the result.</response>
+  </message>
+  <message id="SASS003F" type="FAILURE">
+    <reason>No 'theme.css' file found. The Bootstrap Sass output is not available.</reason>
+    <response>Run the 'sass-bootstrap' transformation to generate the theme CSS.</response>
+  </message>
+</messages>
