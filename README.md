@@ -1,6 +1,8 @@
 # DITA Bootstrap Sass
 
-<a href="https://www.dita-ot.org"><img src="https://www.dita-ot.org/images/dita-ot-logo.svg" align="right" height="55"></a>
+<a href="https://www.dita-ot.org"><img src="https://www.dita-ot.org/images/dita-ot-logo.svg" align="left" height="55" width="80"></a>
+
+<a href="https://sass-lang.com"><img src="https://sass-lang.com/assets/img/logos/logo.svg" align="right" width="55"></a>
 
 _DITA Bootstrap Sass_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that allows you to extend the [DITA Bootstrap](https://infotexture.github.io/dita-bootstrap/) HTML output via [Syntactically Awesome Style Sheets][Sass].
 
@@ -11,6 +13,8 @@ _DITA Bootstrap Sass_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/p
   - [Installing the plug-in](#installing-the-plug-in)
   - [Installing Node.js](#installing-nodejs)
 - [Usage](#usage)
+  - [Generating a CSS theme from Sass](#generating-a-css-theme-from-sass)
+  - [Using the generated theme](#using-the-generated-theme)
 - [License](#license)
 
 <!-- /MarkdownTOC -->
@@ -50,19 +54,19 @@ To download and install a copy, follow the instructions for your operating syste
 
 ## Usage
 
-#### Generating Sass
+### Generating a CSS theme from Sass
 
-To run, follow the instructions in the [override.scss](./override.scss) file and use the `sass-bootstrap` transformation:
+To generate a CSS theme from your custom Sass source files, follow the instructions in the [sass/override.scss](./sass/override.scss) file and use the `sass-bootstrap` transformation:
 
 ```console
 PATH_TO_DITA_OT/bin/dita -f sass-bootstrap -i PATH_TO_DITAMAP
 ```
 
-A `theme.css` file will be generated, and the result can be seen by viewing the [index.html](./index.html) file in a web browser.
+A `theme.css` file will be generated in the `sass` folder. To preview the results of your customizations, open the [sass/index.html](./sass/index.html) file in a web browser.
 
-#### Using a pregenerated Sass theme as CSS in the HTML Bootstrap output
+### Using the generated theme
 
-To run, use the `html5-bootstrap` transformation and add the `bootstrap.sass` parameter.
+To use a pregenerated Sass theme as CSS in the HTML Bootstrap output, run the `html5-bootstrap` transformation and pass the `bootstrap.sass` parameter to the `dita` command:
 
 ```console
 PATH_TO_DITA_OT/bin/dita -f html5-bootstrap -o out -i PATH_TO_DITAMAP \
