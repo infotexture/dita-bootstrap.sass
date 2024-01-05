@@ -17,5 +17,13 @@ useTabs: false
 vueIndentScriptAndStyle: true
 xmlSelfClosingSpace: false
 xmlWhitespaceSensitivity: strict
+
+# Override configuration for Sass src
+# per stylelint-config-twbs-bootstrap
+overrides:
+  - files: '*.scss'
+    options:
+      singleQuote: false
+
 plugins:
   - '@prettier/plugin-xml'

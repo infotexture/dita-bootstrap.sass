@@ -32,10 +32,7 @@
   "stylelint": {
     "extends": [
       "stylelint-config-twbs-bootstrap"
-    ],
-    "rules": {
-      "@stylistic/string-quotes": "single"
-    }
+    ]
   },
   "devDependencies": {
     "@prettier/plugin-xml": "3.2.2",
