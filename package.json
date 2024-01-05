@@ -34,7 +34,7 @@
       "stylelint-config-twbs-bootstrap"
     ],
     "rules": {
-      "stylistic/string-quotes": "single"
+      "@stylistic/string-quotes": "single"
     }
   },
   "devDependencies": {
