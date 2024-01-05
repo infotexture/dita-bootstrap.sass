@@ -1,0 +1,21 @@
+# Prettier Configuration File
+
+# https://prettier.io/docs/en/configuration.html
+
+arrowParens: avoid
+bracketSpacing: false
+endOfLine: lf
+htmlWhitespaceSensitivity: css
+printWidth: 120
+proseWrap: preserve
+requirePragma: false
+semi: true
+singleQuote: true
+tabWidth: 2
+trailingComma: all
+useTabs: false
+vueIndentScriptAndStyle: true
+xmlSelfClosingSpace: false
+xmlWhitespaceSensitivity: strict
+plugins:
+  - '@prettier/plugin-xml'
