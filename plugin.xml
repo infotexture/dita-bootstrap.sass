@@ -4,7 +4,7 @@
   This file is part of the DITA Bootstrap Sass plug-in for DITA Open Toolkit.
   See the accompanying LICENSE file for applicable licenses.
 -->
-<plugin id="net.infotexture.dita-bootstrap.sass" version="5.3.3">
+<plugin id="net.infotexture.dita-bootstrap.sass" version="5.3.4">
   <require plugin="net.infotexture.dita-bootstrap"/>
   <feature extension="ant.import" file="process_themes.xml"/>
   <feature extension="bootstrap.process.pre" value="bootstrap.sass"/>
