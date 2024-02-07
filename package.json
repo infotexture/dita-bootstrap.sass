@@ -15,7 +15,7 @@
     "format:style": "prettier --write \"**/*.scss\"",
     "format:xml": "prettier --write \"**/*.xml\"",
     "lint-staged": "lint-staged",
-    "prepare": "husky install",
+    "prepare": "husky",
     "prettier": "prettier --write \"**/*.{html,json,md,scss,xml,yml}\"",
     "prettier-check": "prettier --check \"**/*.{html,json,md,scss,xml,yml}\"",
     "stylelint": "stylelint \"sass/*.scss\"",
@@ -32,17 +32,14 @@
   "stylelint": {
     "extends": [
       "stylelint-config-twbs-bootstrap"
-    ],
-    "rules": {
-      "stylistic/string-quotes": "single"
-    }
+    ]
   },
   "devDependencies": {
-    "@prettier/plugin-xml": "3.2.1",
-    "husky": "^8.0.3",
-    "lint-staged": "14.0.1",
-    "prettier": "3.0.3",
-    "stylelint": "^15.10.3",
-    "stylelint-config-twbs-bootstrap": "^11.0.1"
+    "@prettier/plugin-xml": "3.2.2",
+    "husky": "^9.0.10",
+    "lint-staged": "15.2.1",
+    "prettier": "3.2.5",
+    "stylelint": "^16.2.1",
+    "stylelint-config-twbs-bootstrap": "^13.0.0"
   }
 }
