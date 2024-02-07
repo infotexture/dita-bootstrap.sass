@@ -15,7 +15,7 @@
     "format:style": "prettier --write \"**/*.scss\"",
     "format:xml": "prettier --write \"**/*.xml\"",
     "lint-staged": "lint-staged",
-    "prepare": "husky install",
+    "prepare": "husky",
     "prettier": "prettier --write \"**/*.{html,json,md,scss,xml,yml}\"",
     "prettier-check": "prettier --check \"**/*.{html,json,md,scss,xml,yml}\"",
     "stylelint": "stylelint \"sass/*.scss\"",
