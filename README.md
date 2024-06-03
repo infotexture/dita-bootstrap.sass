@@ -46,7 +46,7 @@ dita install https://github.com/infotexture/dita-bootstrap.sass/archive/master.z
 
 ### Installing Node.js
 
-<a href="https://nodejs.org/"><img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg" align="right" width="70" height="70" align="right" width="55" height="55"></a>
+<a href="https://nodejs.org/"><img src="https://simpleicons.org/icons/nodedotjs.svg" align="right" width="70" height="70" align="right" width="55" height="55"></a>
 
 The _DITA Bootstrap Sass_ plug-in uses the [Node.js](https://nodejs.org/) JavaScript runtime to generate the `theme.css` file. Node.js must therefore be present for the index to be generated successfully.
 
