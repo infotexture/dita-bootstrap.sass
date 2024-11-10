@@ -14,20 +14,10 @@
     "format": "npm run prettier",
     "format:style": "prettier --write \"**/*.scss\"",
     "format:xml": "prettier --write \"**/*.xml\"",
-    "lint-staged": "lint-staged",
-    "prepare": "husky",
     "prettier": "prettier --write \"**/*.{html,json,md,scss,xml,yml}\"",
     "prettier-check": "prettier --check \"**/*.{html,json,md,scss,xml,yml}\"",
     "stylelint": "stylelint \"sass/*.scss\"",
     "test": "prettier --list-different \"**/*.{html,json,md,scss,xml,yml}\""
-  },
-  "lint-staged": {
-    "*.{html,json,md,scss,xml,yml}": [
-      "prettier --write"
-    ],
-    "*.scss": [
-      "stylelint"
-    ]
   },
   "stylelint": {
     "extends": [
@@ -36,8 +26,7 @@
   },
   "devDependencies": {
     "@prettier/plugin-xml": "3.4.1",
-    "husky": "^9.0.11",
-    "lint-staged": "15.2.5",
+    "lefthook": "^1.8.2",
     "prettier": "3.3.3",
     "stylelint": "^16.6.1",
     "stylelint-config-twbs-bootstrap": "^14.1.0"
