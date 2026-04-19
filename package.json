@@ -1,10 +1,10 @@
 {
   "name": "dita-bootstrap.sass",
   "description": "DITA Open Toolkit plug-in that extends HTML output from the DITA Bootstrap plug-in with a Sass theme",
-  "homepage": "https://infotexture.github.io/dita-bootstrap",
+  "homepage": "https://dita-bootstrap.github.io/sass.html",
   "repository": {
     "type": "git",
-    "url": "https://github.com/infotexture/dita-bootstrap.sass.git"
+    "url": "https://github.com/dita-bootstrap/dita-bootstrap.sass.git"
   },
   "license": "Apache-2.0",
   "scripts": {
