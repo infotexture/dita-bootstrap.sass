@@ -41,7 +41,7 @@ See the [DITA-OT documentation](https://www.dita-ot.org/4.0/topics/installing-cl
 ```console
 dita install https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
 dita install https://github.com/infotexture/dita-bootstrap/archive/master.zip
-dita install https://github.com/dita-bootstrap/dita-bootstrap.sass/archive/master.zip
+dita install https://github.com/dita-bootstrap/dita-bootstrap.sass/archive/develop.zip
 ```
 
 ### Installing Node.js
