@@ -4,12 +4,12 @@
   This file is part of the DITA Bootstrap Sass plug-in for DITA Open Toolkit.
   See the accompanying LICENSE file for applicable licenses.
 -->
-<project name="dita.plugin.net.infotexture.dita-bootstrap.sass" xmlns:if="ant:if" xmlns:unless="ant:unless">
+<project name="dita.plugin.org.dita-bootstrap.sass" xmlns:if="ant:if" xmlns:unless="ant:unless">
   <target name="bootstrap.sass" if="bootstrap.sass">
     <macrodef name="incorporate-theme">
       <sequential>
         <condition property="bootstrap.theme.exists">
-          <available file="${dita.plugin.net.infotexture.dita-bootstrap.sass.dir}/sass/theme.css"/>
+          <available file="${dita.plugin.org.dita-bootstrap.sass.dir}/sass/theme.css"/>
         </condition>
 
         <dita-ot-fail unless:set="bootstrap.theme.exists" id="SASS003F"/>
@@ -17,7 +17,7 @@
         <property name="args.copycss" value="yes"/>
         <property name="args.csspath" value="css"/>
         <property name="args.css" value="theme.css"/>
-        <property name="args.cssroot" value="${dita.plugin.net.infotexture.dita-bootstrap.sass.dir}/sass"/>
+        <property name="args.cssroot" value="${dita.plugin.org.dita-bootstrap.sass.dir}/sass"/>
       </sequential>
     </macrodef>
 
@@ -66,7 +66,7 @@
   </target>
 
   <target name="dita2sass-bootstrap" depends="sass.node.check">
-    <property name="dita-bootstrap.sass.dir" value="${dita.plugin.net.infotexture.dita-bootstrap.sass.dir}/sass"/>
+    <property name="dita-bootstrap.sass.dir" value="${dita.plugin.org.dita-bootstrap.sass.dir}/sass"/>
     <available file="${dita-bootstrap.sass.dir}/package-lock.json" property="sass.installed"/>
 
     <exec

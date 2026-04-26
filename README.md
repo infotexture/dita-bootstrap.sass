@@ -4,7 +4,7 @@
 
 <a href="https://sass-lang.com"><img src="https://sass-lang.com/assets/img/logos/logo.svg" align="right" width="55"></a>
 
-_DITA Bootstrap Sass_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that allows you to extend the [DITA Bootstrap](https://infotexture.github.io/dita-bootstrap/) HTML output via [Syntactically Awesome Style Sheets][Sass].
+_DITA Bootstrap Sass_ is a [DITA Open Toolkit plug-in](https://www.dita-ot.org/plugins) that allows you to extend the [DITA Bootstrap](https://dita-bootstrap.github.io/) HTML output via [Syntactically Awesome Style Sheets][Sass].
 
 <!-- MarkdownTOC levels="2,3" -->
 
@@ -40,7 +40,7 @@ See the [DITA-OT documentation](https://www.dita-ot.org/4.0/topics/installing-cl
 
 ```console
 dita install https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
-dita install https://github.com/infotexture/dita-bootstrap/archive/master.zip
+dita install https://github.com/dita-bootstrap/dita-bootstrap/archive/master.zip
 dita install https://github.com/dita-bootstrap/dita-bootstrap.sass/archive/develop.zip
 ```
 
