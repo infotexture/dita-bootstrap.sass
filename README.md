@@ -39,7 +39,7 @@ See the [DITA-OT documentation](https://www.dita-ot.org/4.0/topics/installing-cl
 - Run the plug-in installation commands:
 
 ```console
-dita install fox.jason.extend.cs
+dita install fox.jason.extend.css
 dita install org.dita-bootstrap.html
 dita install org.dita-bootstrap.sass
 ```
